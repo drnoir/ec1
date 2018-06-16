@@ -1,0 +1,120 @@
+/* EC1 Gallery Test by Chris Godber - Custum CSS */
+/* container div for site content */
+.container{
+width:100%;
+min-width:100%;
+margin:0;    
+}
+
+/* position for menu */
+.menu{
+
+float:right;
+}
+
+.lnr-menu-circle {
+    color:#000000;
+    font-size: 50px;
+    /* To get crisp results, use sizes that are
+    a multiple of 20; because Linearicons was
+    designed on a 20 by 20 grid. */
+    margin-left:30px;
+  }
+
+  .lnr-magnifier {
+    color:#000000;
+    font-size: 50px;
+    /* To get crisp results, use sizes that are
+    a multiple of 20; because Linearicons was
+    designed on a 20 by 20 grid. */
+  }
+  
+  .right{
+   float:right;   
+  }
+
+/* block level full width */
+.full-w-div{
+    width:100%;
+    margin:5px;
+}
+
+/* block level full width for footer - Clear floats on prev divs and stick to botoom of page */
+.full-w-div-footer{
+    clear:both;
+    width:100%;
+    margin:5px;
+    bottom:0;
+    float:left;
+}
+
+.grey-footer{
+background-color:darkgray;
+height:80px;
+width:auto;
+bottom:0;
+}
+
+/* block level info box */
+.info-div{
+float:left;
+text-align: justify; 
+width:100%;
+}
+
+/* Float based Layout Columns */
+.half-col{
+    width:50%;   
+    float:left; 
+}
+    
+.three-col{
+width:33.33%;
+float:left;
+}
+
+.four-col{
+width:23%;
+float:left;
+}
+
+/* block level full width for image top */
+.img-resizetop{
+    width: 100%;
+    height: auto;
+    margin:0px;
+}
+
+/* font and list typography styles etc*/
+ul{
+    list-style:none;
+}
+
+ul.footer-links{
+    float:left;
+    list-style:none;
+    width:100%;
+}
+
+ul.footer-links li{
+    float:left;
+    margin-right:20px;
+    font-weight:bold;
+}
+
+/*reponsive media queries for mobile devices
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
