@@ -7,6 +7,7 @@ import event1 from './event1.png';
 import event2 from './event2.png';
 import event3 from './event3.png';
 
+
 class App extends Component {
   render() {
     return (
@@ -16,6 +17,7 @@ class App extends Component {
           <header className="App-header">
             <h1 className="App-title">EC1 GALLERY</h1>
           </header>
+
           <div className="full-w-div">
 
             <img src = {mainimage} alt="mainimage" className="img-resizetop" />
@@ -23,6 +25,7 @@ class App extends Component {
               <h4>Anselm Kiefer: Wallhalla</h4>
               <p>until 12 Feburay 2017, Bermondsey</p>
           </div>
+
           <div className="full-w-div">
           <div className="info-div">
               <hr/>
@@ -30,9 +33,10 @@ class App extends Component {
                   <h4>News and Events</h4>
                 </div>  
                 <div class = "half-col">
-                  <p class = "right">Views All</p>
+                  <p class = "menu">View All</p>
                 </div>
               </div>
+
             <div className="three-col">
             <img src ={event1}  alt="mainimage" />
             <h4>Exhibition: He Xiangyu mongrapth released by Distanz</h4>
@@ -53,14 +57,19 @@ class App extends Component {
           <div className="full-w-div">
             <div className="info-div">
               <hr/>
-              <div class = "half-col">
+              <div className = "half-col">
                   <h4>Channel</h4>
               </div>
-              <div class = "half-col">
-              <p>View All</p>
+              <div className = "half-col">
+              <p className = "menu">View All</p>
               </div>
-                  <iframe width="1280" height="615" src="https://www.youtube.com/embed/vlm5tgistqA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                  <h4>Anselm Kiefer</h4>
+              <div>
+                <div className ="videocontainer">
+                <iframe  src="https://www.youtube.com/embed/vlm5tgistqA" width="100%" height="500" allowfullscreen="no" frameborder="0">
+                </iframe>
+                </div>
+            </div>
+               <h4>Anselm Kiefer</h4>
                   <p>In conversation with with Tim Marlow in the auditorium</p>
             </div>
           </div>
@@ -133,12 +142,12 @@ class App extends Component {
         <li>Contact</li>  
         <li>Press rooms</li>  
     </ul>
-
-    <h3>EC1 GALLERY</h3>
-    <p>344 Clerkenwell Road</p>
-    <p>LondonEC1 5RS</p> 
-    <p>Tel +44(0) 207 123 4567</p>
-
+    <div class ="add-footer">
+      <h3>EC1 GALLERY</h3>
+      <p>344 Clerkenwell Road</p>
+      <p>LondonEC1 5RS</p> 
+      <p>Tel +44(0) 207 123 4567</p>
+      </div>
     <div className="grey-footer">
       
       <div className="half-col">
